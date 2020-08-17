@@ -27,5 +27,5 @@ class FYPSerializer(TaggitSerializer, serializers.ModelSerializer):
 
     class Meta:
         model = Final_Year_Projects
-        fields = ("BatchYear", "Project_Name", "Project_Supervisor",
+        fields = ("id", "BatchYear", "Project_Name", "Project_Supervisor",
                   "External_Supervisor", "Co_Supervisor", "Project_Id", "Students")

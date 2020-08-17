@@ -86,13 +86,18 @@ WSGI_APPLICATION = 'Backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'FYPRecord',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'FYPRECORDDATABASE',
+        'USER': 'root',
+        'PASSWORD': '',
         'HOST': '',
+        'PORT': '',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
 
+        }
     }
 }
 
